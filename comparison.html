@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Comparison - Cera's Tiles</title> <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Select 2 Tiles to Compare</h2>
+        <div class="row" id="productCards"> <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow"> <img src="glossy.webp" class="card-img-top"
+                        alt="Glossy Wall Tile">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Glossy Wall Tile</h5>
+                        <p>Perfect for bathrooms and kitchens.</p> <input type="checkbox" class="compare-checkbox"
+                            value="glossy"> <label>Add to Compare</label>
+                    </div>
+                </div>
+            </div> <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow"> <img src="matte.webp" class="card-img-top"
+                        alt="Matte Floor Tile">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Matte Floor Tile</h5>
+                        <p>Ideal for living rooms and offices.</p> <input type="checkbox" class="compare-checkbox"
+                            value="matte"> <label>Add to Compare</label>
+                    </div>
+                </div>
+            </div> <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow"> <img src="germ.jfif" class="card-img-top"
+                        alt="Germ Free Tile">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Germ Free Tile</h5>
+                        <p>Best for hospitals and kitchens.</p> <input type="checkbox" class="compare-checkbox"
+                            value="germfree"> <label>Add to Compare</label>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- Compare Button -->
+        <div class="text-center mt-4"> <button class="btn btn-primary px-5" onclick="compareSelectedProducts()">Compare
+                Products</button> </div> <!-- Comparison Result -->
+        <div id="comparisonResult" class="mt-5"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
